@@ -1,4 +1,12 @@
-# Anypoint Code Builder for Linux (unofficial)
+# Anypoint Extension Pack (Anypoint Code Builder) for Linux (unofficial)
+
+## Preamble
+
+Do you have the displeasure of using MuleSoft for work? Do you want to use the Anypoint Extension Pack in VS Code instead of the buggy AnypointStudio? Do you run Linux and bemoan the fact that they can't seem to be bothered to make a Linux release of the extension? Well look no further, person who meets this hyper-specific critera! Using the power of an LLM--because I can't be arsed--"I" have "created" a couple of scripts that will download the official MacOS build of the plugin, compile the dependencies that need to be recompiled for Linux, and repackage everything so that you can install it in VS Code.
+
+If MuleSoft cared, they could do this officially in an afternoon.
+
+## Details
 
 Salesforce publishes the [Anypoint Extension Pack](https://marketplace.visualstudio.com/items?itemName=salesforce.mule-dx-extension-pack) for VS Code only for Windows and macOS. The extensions' code already handles Linux. Only three bundled binaries are tied to an OS:
 
@@ -24,6 +32,7 @@ This repository contains only scripts. It does not include or redistribute any S
   sudo pacman -S --needed curl jq unzip zip xz git file go      # Arch
   sudo apt install curl jq unzip zip xz-utils git file golang   # Debian/Ubuntu
   ```
+
 - About 2 GB of downloads and 6 GB of free disk space while building
 
 ## Usage
